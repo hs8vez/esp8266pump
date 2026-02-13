@@ -11,14 +11,14 @@ String autopump = "on";
 DHT dht(ddht, DHTTYPE);
 
 
-const char* ssid = "______";
-const char* password = "_______";
+const char* ssid = "pwantu";
+const char* password = "admin1234";
 
 const char* mqtt_server = "broker.netpie.io";
 const int mqtt_port = 1883;
-const char* mqtt_Client = "___________________________";
-const char* mqtt_username = "___________________________";
-const char* mqtt_password = "___________________________";
+const char* mqtt_Client = "https://github.com/hs8vez/esp8266pump.git";
+const char* mqtt_username = "8JWd8LmJabqnhi8i7BxTVTYSSTeMRiH6";
+const char* mqtt_password = "o2uQb7NPFNuHuBD1uk5Yr6eT1K2NHsXe";
 
 WiFiClient espClient;
 PubSubClient client(espClient);
@@ -107,3 +107,4 @@ String getMsg(String topic_, String message_) {
   }
   return autopump;
 }
+
